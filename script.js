@@ -30,9 +30,11 @@ const clear = document.querySelector('.clear')
 
 btn.addEventListener('click', () => {
     let inputNum = document.querySelector('#mynum').value;
-    while (container.hasChildNodes()) {
-        container.removeChild(container.firstChild);
-      }
+    if ( 0 < inputNum && inputNum <= 100){
+        while (container.hasChildNodes()) {
+            container.removeChild(container.firstChild);
+        }  
+    } else { alert("it's need to be between 1 and 100")}
 
     grid(inputNum);
 });
