@@ -13,14 +13,20 @@ function grid(num) {
     }
 
 const divs = document.querySelectorAll('.square');
-
 divs.forEach((div) => {
     div.addEventListener("mouseover", () => {
         div.classList.add('color');
     });
 });
+divs.forEach((div) => {
+    clear.addEventListener("click", () => {
+        div.classList.remove('color');
+    });
+});
+
 }
 const btn = document.querySelector('.btn');
+const clear = document.querySelector('.clear')
 
 btn.addEventListener('click', () => {
     let inputNum = document.querySelector('#mynum').value;
@@ -30,4 +36,5 @@ btn.addEventListener('click', () => {
 
     grid(inputNum);
 });
+
 grid(16);
