@@ -34,9 +34,10 @@ btn.addEventListener('click', () => {
         while (container.hasChildNodes()) {
             container.removeChild(container.firstChild);
         }  
-    } else { alert("it's need to be between 1 and 100")}
+        grid(inputNum);
+    } else { alert("it's need to be between 1 and 100");}
 
-    grid(inputNum);
+    
 });
 
 grid(16);
