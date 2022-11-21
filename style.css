@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    border: blue solid 2px;
+    background-color: #fff;
+}
+.square {
+    border: .01px #000 solid;
+    box-sizing: border-box;
+
+}
+.changeGrid {
+    display: flex;
+    align-items: center;
+}
+.btn, #mynum {
+    padding: 8px 16px;
+    margin: 8px 0;
+    border: #fff;
+}
+.btn{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+#mynum {
+
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.color {
+    background-color: red;
+  }
